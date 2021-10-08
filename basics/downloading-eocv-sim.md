@@ -14,9 +14,9 @@ Note that the screenshot might not be what is actually displayed when you open t
 
 ## Running EOCV-Sim
 
-Once the jar file has finished downloading, you can simply double click it in your operating system file explorer to run it, just like any other executable file.
+Once the jar file has finished downloading, you can simply double-click it in your operating system file explorer to run it, just like any other executable file.
 
-If this doesn't work, you can try running it from the command line. First navigate to the folder the EOCV-Sim jar is stored using the `cd` command. Then, invoke the java command passing it the jar name as follows:
+If this doesn't work, you can try running it from the command line. First navigate to the folder the EOCV-Sim jar is stored in using the `cd` command. Then, invoke the java command passing it the jar name as follows:
 
 ```text
 java -jar "EOCV-Sim-X.X.X-all.jar"

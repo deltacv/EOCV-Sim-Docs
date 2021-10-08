@@ -43,8 +43,8 @@ public class SamplePipeline extends OpenCvPipeline {
 
 There are two ways for adding your own pipelines:
 
-* [Workspaces](../workspaces/what-are-workspaces.md), which are the fastest and most flexible method of using the sim, since the pipelines are built on the fly and changes are applied immediately.
-* [Building from source](../other/untitled.md), which allows to use other JVM languages such as Kotlin but it's slower since you have to recompile and wait for the sim to open every time you make a change in your pipelines.
+* [Workspaces](../workspaces/what-are-workspaces.md), which are the fastest and most flexible method of using the sim, since the pipelines are built on-the-fly and changes are applied immediately.
+* [Building from source](../other/untitled.md), which allows the use of other JVM languages such as Kotlin, but it is slower since you have to recompile and wait for the sim to open every time you make changes in your pipelines.
 
 Workspaces are the recommended method for development if you use Java. You can use any IDE or text editor for them. We officially support [Android Studio](../workspaces/android-studio.md) \(sort of\), [VS Code, and IntelliJ IDEA](../workspaces/vscode-and-intellij.md). 
 

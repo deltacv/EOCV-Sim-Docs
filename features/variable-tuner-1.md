@@ -2,7 +2,7 @@
 
 ## Sample Usage
 
-Let's say we need to tune a threshold for finding the ring stack in the 2020-2021 "Ultimate Goal" game. For this, we will use the YCrCb color space since it's one of the most used ones in FTC and it behaves better under different lightning conditions. \(see [this article](https://learnopencv.com/color-spaces-in-opencv-cpp-python/) for more extended explaination and comparation of different color spaces\).
+Let's say we need to tune a threshold for finding the ring stack in the 2020-2021 "Ultimate Goal" game. For this, we will use the YCrCb color space since it's one of the most used ones in FTC, and it behaves better under different lightning conditions. \(see [this article](https://learnopencv.com/color-spaces-in-opencv-cpp-python/) for more extended explanation and comparing of different color spaces\).
 
 We can write a simple pipeline for achieving this, taking advantage of the variable tuner. Here's an example code with detailed comments:
 
@@ -108,19 +108,19 @@ public class SimpleThresholdPipeline extends OpenCvPipeline {
 }
 ```
 
-And so, when initially selecting this pipeline in the simulator, it's initial state should look something like this:
+And so, when initially selecting this pipeline in the simulator, its initial state should look something like this:
 
 ![Scalar variables with sliders that range from 0 to 255](../.gitbook/assets/eocvsim_usage_tuner_thresholdsample_1.png)
 
-All pixels from the input Mat are visible entirely, this is because we specified a range of 0 lower and 255 upper \(0-255\) for all three channels \(see the sliders values\). Since those values are the minimum \(0%\) and maximum \(100%\) for YCrCb respectively, all pixels are able to go through our "threshold". The last slider can be ignored since we don't have a 4th color channel
+All pixels from the input Mat are entirely visible; this is because we specified a range of 0 lower and 255 upper \(0-255\) for all three channels \(see the sliders values\). Since those values are the minimum \(0%\) and maximum \(100%\) for YCrCb respectively, all pixels are able to go through our "threshold". The last slider can be ignored since we don't have a 4th color channel
 
 After a bit of playing around with the sliders, it's possible to come up with some decent values which successfully filter out the orange ring stack out of everything else:
 
 ![Woo! We are filtering the rings!](../.gitbook/assets/eocvsim_usage_tuner_thresholdsample_2.png)
 
-A problem with the YCrCb color space, especially this year, is that the difference between red and orange is very subtle. So therefore we need to play with the values for a good while until we find some that filters out the red from the goals \(in the image you can see there's still red leftovers at the top right\) but displays the ring stack. Or do some other technique alongside thresholding such as [FTCLib's contour ring pipeline](https://github.com/FTCLib/FTCLib/blob/3a43b191b18581a2f741588f9b8ab60c13b7fb6c/core/vision/src/main/java/com/arcrobotics/ftclib/vision/UGContourRingPipeline.kt#L46) with the "horizon" mechanism.
+A problem with the YCrCb color space, especially this year, is that the difference between red and orange is very subtle. So we need to play with the values for a good while until we find some that filters out the red from the goals \(in the image you can see there's still red leftovers at the top right\) but displays the ring stack. Or do some other technique alongside thresholding such as [FTCLib's contour ring pipeline](https://github.com/FTCLib/FTCLib/blob/3a43b191b18581a2f741588f9b8ab60c13b7fb6c/core/vision/src/main/java/com/arcrobotics/ftclib/vision/UGContourRingPipeline.kt#L46) with the "horizon" mechanism.
 
-To keep this explaination simple, you can find the final pipeline [here](https://github.com/serivesmejia/EOCV-Sim/blob/dev/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/SimpleThresholdPipeline.java) with the some additional features, in the TeamCode module, since serves as a good sample alongside other sample classes from EOCV itself.
+To keep this explanation simple, you can find the final pipeline [here](https://github.com/serivesmejia/EOCV-Sim/blob/dev/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/SimpleThresholdPipeline.java) with some additional features, in the TeamCode module, since serves as a good sample alongside other sample classes from EOCV itself.
 
 
 
