@@ -20,19 +20,19 @@ This guide will explain how to use any of these two, you can choose whichever su
 
 4. Do the steps specified in the [**Creating a Gradle workspace**](vscode-and-intellij.md#creating-a-gradle-workspace) section
 
-5. Once you have done the steps in that section, go back to VS Code. If it wasn't  opened automatically by EOCV-Sim, open it manually and select the folder you created in EOCV-Sim.
+5. Once you have done the steps in that section, go back to VS Code. If it wasn't opened automatically by EOCV-Sim, open it manually and select the folder you created in EOCV-Sim.
 
-6.  If the language support plugin asks to import the project on the botton right, click on yes.
+6. If the language support plugin asks to import the project on the bottom right, click on yes.
 
 ![](../.gitbook/assets/screenshot_vscode_javaproject.png)
 
-7. Wait for the import process to finish, see a tiny loading icon in the bottom right.
+7. Wait for the import process to finish; see the tiny loading icon in the bottom right.
 
 8. Pop up the `src/main/java` folder. This is where you will put your pipelines.
 
-9. To create a new pipeline, right click on the `java` folder and then "New File". Give the file a name and a `.java` extension \(append it at the end of the name, for example `GrayscalePipeline.java`\)
+9. To create a new pipeline, right-click on the `java` folder and then choose "New File". Give the file a name and a `.java` extension \(append it at the end of the name, for example `GrayscalePipeline.java`\)
 
-10. Copy paste this template to have a base to create your pipeline. Put the name of the class to the name you gave the file where it's indicated
+10. Copy and paste this template to have a base to create your pipeline. Replace the name of the class with the name you gave the file where it's indicated
 
 ```java
 import org.opencv.core.Mat;
@@ -50,11 +50,11 @@ public class <Name Here> extends OpenCvPipeline {
 }
 ```
 
-If you have EOCV-Sim opened, every time you save the file in the editor \(you can use Ctrl + S\) a new build will be executed. If your pipeline was compiled sucessfully, it will be added to the list with a "gears" icon in the list to differentiate it.
+If you have EOCV-Sim opened, every time you save the file in the editor \(you can use Ctrl + S\) a new build will be executed. If your pipeline was compiled successfully, it will be added to the list with a "gears" icon in the list to differentiate it.
 
-But if the build failed, you will be presented with a output error message saying where the errors are located exactly. VS Code IntelliSense should help you finding these issues
+However, if the build failed, you will be presented with an output error message saying where the errors are located exactly. VS Code IntelliSense should help you with finding these issues.
 
-Refer to the [pipelines section](../pipelines.md) if you wanna learn more about pipelines.
+Refer to the [pipelines section](../pipelines.md) if you want to learn more about pipelines.
 
 ## IntelliJ IDEA
 
@@ -68,13 +68,13 @@ Refer to the [pipelines section](../pipelines.md) if you wanna learn more about 
 
 ![](../.gitbook/assets/create-gradle-workspace.png)
 
-3. In the file explorer, create a new empty folder or select one that already exists but has no files. You can't use a folder that already has files in it. Click on the folder icon with a + in the top, and give the new folder a name
+3. In the file explorer, create a new empty folder or select one that already exists but has no files. You can't use a folder that already has files in it. Click on the folder icon with a "+" in the top, and give the new folder a name.
 
 ![](../.gitbook/assets/create-folder-screenshot.png)
 
 4. Select the newly created folder and click on "open". 
 
-It will pop up a dialog asking if you wanna open VS Code. If you were following the VS Code guide, click on "Yes" once it asks if you wanna open it, and go back to [step \#5](vscode-and-intellij.md#vs-code). 
+It will pop up a dialog asking if you want to open VS Code. If you were following the VS Code guide, click on "Yes" once it asks if you want to open it, and go back to [step \#5](vscode-and-intellij.md#vs-code). 
 
 If you were following the IntelliJ IDEA guide, click on "No" and go back to \*.
 

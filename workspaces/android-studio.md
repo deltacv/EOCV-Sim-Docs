@@ -2,7 +2,7 @@
 
 **First, make sure you follow the** [**EasyOpenCV installation instructions**](https://github.com/OpenFTC/EasyOpenCV#installation-instructions) **to add OpenCV into your FTC SDK project!**
 
-If you wanna use EOCV-Sim with `OpenCvPipeline`s that are already in Android Studio, that's easily possible using the workspaces feature.
+If you want to use EOCV-Sim with `OpenCvPipeline`s that are already in Android Studio, that's easily possible using the workspaces feature.
 
 To achieve this, you need to isolate your pipeline's source files into their own package. Since EOCV-Sim only implements a very small part of the FTC SDK, if you try to compile a class that references stuff like `OpMode` or `DcMotor`, it will fail since those classes don't exist in EOCV-Sim.
 
@@ -54,7 +54,7 @@ The only classes from the FTC SDK and EasyOpenCV that have been implemented are.
 
 This also means that you **do not need to use the`OpenCvCamera`related stuff in EOCV-Sim**, inputs are simulated using [Input Sources](../features/input-sources.md).
 
-For example, you can have the following package structure in your Android Studio project to isolate `OpenCvPipeline`s and load the into EOCV-SIm:
+For example, you can have the following package structure in your Android Studio project to isolate `OpenCvPipeline`s and load the into EOCV-Sim:
 
 ![](../.gitbook/assets/eocv-sim-folder-structure.png)
 
@@ -72,7 +72,7 @@ Then, navigate through the folders`TeamCode/src/main/java/org/firstinspires/ftc/
 
 ![](../.gitbook/assets/select-vision-package.png)
 
-Select the `vision` folder and click on "Open". The pipelines inside will be compiled in a few instants and you will have them on the pipeline selector once it finishes successfully:
+Select the `vision` folder and click on "Open". The pipelines inside will be compiled in a few instants, and you will have them on the pipeline selector once it finishes successfully:
 
 ![The pipelines that are in the vision package, in the first screenshot of this page](../.gitbook/assets/selected-vision-package.png)
 
