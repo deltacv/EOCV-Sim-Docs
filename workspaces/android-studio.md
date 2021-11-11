@@ -8,61 +8,25 @@ To achieve this, you need to isolate your pipeline's source files into their own
 
 The only classes from the FTC SDK and EasyOpenCV that have been implemented are...
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Package</th>
-      <th style="text-align:left">Classes</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">org.firstinspires.ftc.robotcore.external</td>
-      <td style="text-align:left">
-        <p>Telemetry (partially)</p>
-        <p>Func</p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">org.firstinspires.ftc.robotcore.external.function</td>
-      <td style="text-align:left">Consumer</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">com.qualcomm.robotcore.util</td>
-      <td style="text-align:left">
-        <p>ElapsedTime</p>
-        <p>MovingStatistics</p>
-        <p>Range</p>
-        <p>Statistics</p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">org.openftc.easyopencv</td>
-      <td style="text-align:left">
-        <p>OpenCvPipeline</p>
-        <p>OpenCvTracker</p>
-        <p>OpenCvTrackerApiPipeline</p>
-        <p>TimestampedOpenCvPipeline</p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">org.opencv</td>
-      <td style="text-align:left">*<b> </b>(everything)</td>
-    </tr>
-  </tbody>
-</table>
+| Package                                           | Classes                                                                                                  |
+| ------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| org.firstinspires.ftc.robotcore.external          | <p>Telemetry (partially)</p><p>Func</p>                                                                  |
+| org.firstinspires.ftc.robotcore.external.function | Consumer                                                                                                 |
+| com.qualcomm.robotcore.util                       | <p>ElapsedTime</p><p>MovingStatistics</p><p>Range</p><p>Statistics</p>                                   |
+| org.openftc.easyopencv                            | <p>OpenCvPipeline</p><p>OpenCvTracker</p><p>OpenCvTrackerApiPipeline</p><p>TimestampedOpenCvPipeline</p> |
+| org.opencv                                        | \* (everything)                                                                                          |
 
 This also means that you **do not need to use the`OpenCvCamera`related stuff in EOCV-Sim**, inputs are simulated using [Input Sources](../features/input-sources.md).
 
-For example, you can have the following package structure in your Android Studio project to isolate `OpenCvPipeline`s and load the into EOCV-Sim:
+For example, you can have the following package structure in your Android Studio project to isolate `OpenCvPipeline`s and load them into EOCV-Sim:
 
 ![](../.gitbook/assets/eocv-sim-folder-structure.png)
 
 The `VisionTestOpMode`class can freely use any of the FTC SDK or EasyOpenCV classes, such as `OpMode`or`OpenCvCamera`, while the classes under the `vision`package should only use the ones specified in the table before, including the whole OpenCV library of course.
 
-Now, you will select the `vision` package as a workspace in EOCV-Sim. To select a workspace you can go to `Workspace -> Select workspace,` like in the gif shown below \(both options showcased do the same thing\):
+Now, you will select the `vision` package as a workspace in EOCV-Sim. To select a workspace you can go to `Workspace -> Select workspace`, like in the gif shown below (both options showcased do the same thing):
 
-![](../.gitbook/assets/eocvsim_usage_workspace_select.gif)
+![](../.gitbook/assets/eocvsim\_usage\_workspace\_select.gif)
 
 To find the vision folder in the project, first locate the root folder of your FTC SDK project in the file selector, something that looks like this:
 
@@ -77,4 +41,3 @@ Select the `vision` folder and click on "Open". The pipelines inside will be com
 ![The pipelines that are in the vision package, in the first screenshot of this page](../.gitbook/assets/selected-vision-package.png)
 
 And now you are done! You will now be able to modify your pipelines from Android Studio and see the changes live. Refer to [the features section](../features/input-sources.md) to learn more about the additional features of EOCV-Sim
-

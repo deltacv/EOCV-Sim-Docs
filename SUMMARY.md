@@ -4,8 +4,6 @@
 
 ## Introduction
 
----
-
 * [OpenCV and EasyOpenCV](opencv-and-easyopencv.md)
 * [EasyOpenCV Pipelines](pipelines.md)
 
@@ -29,4 +27,3 @@
 ## Other
 
 * [Building from Source](other/untitled.md)
-
