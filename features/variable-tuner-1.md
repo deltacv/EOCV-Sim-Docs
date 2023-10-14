@@ -4,19 +4,19 @@
 
 From EOCV-Sim v2.0.0 and going forward, there's a variable tuner implemented into the simulator, inspired by FTC Dashboard, it allows to edit public, non-final variables from your pipeline in real time seamlessly through Java reflection.
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>Variable tuner panel popup button (located at the bottom)</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption><p>Variable tuner panel popup button (located at the bottom)</p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption><p>DefaultPipeline tuneable variables</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (10).png" alt=""><figcaption><p>DefaultPipeline blur variable</p></figcaption></figure>
 
 The "blur" variable simply consists of a public, non-final field declared in the DefaultPipeline, which is automatically detected and displayed by the simulator:
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption><p>DefaultPipeline source code</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption><p>DefaultPipeline source code</p></figcaption></figure>
 
 ## Supported Types
 
 The tuner supports a handful of Java types, such as most primitives (int, float, double, boolean...) and some other types from OpenCV. The full list of types currently supported by the tuner on the latest version is:
 
-Java:
+**Java:**
 
 * int (or Integer)
 * float (or Float)
@@ -26,7 +26,7 @@ Java:
 * String
 * Enums
 
-OpenCV:
+**OpenCV:**
 
 * Scalar
 * Rect

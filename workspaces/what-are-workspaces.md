@@ -4,7 +4,7 @@
 
 A workspace basically consists of a folder containing `.java` source files and resource files, which are compiled on-the-fly by EOCV-Sim. This removes the need of having to use Gradle for running slow builds, and even allows you to see code changes in real time within a few seconds, or even milliseconds!
 
-![A OpenCvPipeline opened in VS Code with IntelliSense](../.gitbook/assets/Screenshot\_2021-09-08\_13-29-02.png)
+![A OpenCvPipeline opened in VS Code with IntelliSense](../.gitbook/assets/screenshot\_2021-09-08\_13-29-02.png)
 
 ## Using workspaces (without any supported IDE or text editor)
 
@@ -18,6 +18,6 @@ The simulator creates and selects by default a workspace in the user folder, `~/
 
 * Select a folder in the file explorer that pops up
 
-![](<../.gitbook/assets/file chooser screenshot.png>)
+![](../.gitbook/assets/file-chooser-screenshot.png)
 
 * And you are done! The sim should select the folder as a workspace, create a `eocvsim_workspace.json` file if it doesn't exist in the selected folder, and build the `.java` files in the directory.

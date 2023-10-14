@@ -13,7 +13,7 @@ To provide more flexibility, EOCV-Sim allows feeding your pipeline with images c
 *   **Video Source:**
 
     * These will feed your pipeline with a constantly changing video stream from a file in your hard drive, pause rules are the same as camera sources.
-    * Most tested video format is _\*.avi_, although it depends on your operating system's support.
+    * Recommended video format is _\*.avi_, although it depends on your operating system's support.
 
 
 

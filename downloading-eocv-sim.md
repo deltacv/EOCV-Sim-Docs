@@ -8,7 +8,7 @@ Java 8 is the minimum. Any version above that will most likely work fine. You ca
 
 **3.** **Download the jar file, named `EOCV-Sim-X.X.X-all.jar`, available at the bottom on the "assets" section:**
 
-![Example screenshot of the latest release as of 17/09/21](<../.gitbook/assets/example release.png>)
+![Example screenshot of the latest release as of 17/09/21](.gitbook/assets/example-release.png)
 
 Note that the screenshot might not be what is actually displayed when you open the page. As new releases come out, this will differ from what you see. But you will always be able to find a jar file in the assets section of any release, similar to the screenshot.
 

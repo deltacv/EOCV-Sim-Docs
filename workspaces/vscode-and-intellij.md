@@ -6,14 +6,14 @@ This guide will explain how to use any of these two, you can choose whichever su
 
 ## VS Code
 
-**Make sure you installed a JDK as explained in the** [**Dowloading EOCV-Sim**](../basics/downloading-eocv-sim.md) **section.**
+**Make sure you installed a JDK as explained in the** [**Dowloading EOCV-Sim**](../downloading-eocv-sim.md) **section.**
 
 1. Download VS Code in [here](https://code.visualstudio.com) if you haven't already.
 2. Open VS Code and install the [Extension Pack for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack), going to the extensions section, search for "java" in the search box at the top and find the extension that looks like the following screenshot.
 
-![](<../.gitbook/assets/extension tab.png>)
+![](../.gitbook/assets/extension-tab.png)
 
-![](<../.gitbook/assets/java extension pack.png>)
+![](../.gitbook/assets/java-extension-pack.png)
 
 1. Click on the blue "Install" button and restart VS Code.
 2. Do the steps specified in the [**Creating a Gradle workspace**](vscode-and-intellij.md#creating-a-gradle-workspace) section
@@ -47,7 +47,7 @@ If you have EOCV-Sim opened, every time you save the file in the editor (you can
 
 However, if the build failed, you will be presented with an output error message saying where the errors are located exactly. VS Code IntelliSense should help you with finding these issues.
 
-Refer to the [pipelines section](../introduction/pipelines.md) if you want to learn more about pipelines.
+Refer to the [pipelines section](../introduction/pipelines/) if you want to learn more about pipelines.
 
 ## IntelliJ IDEA
 
@@ -55,14 +55,14 @@ Refer to the [pipelines section](../introduction/pipelines.md) if you want to le
 
 ## Creating a Gradle workspace
 
-1. Open EOCV-Sim (follow [this page](../basics/downloading-eocv-sim.md#running-eocv-sim) if needed)
+1. Open EOCV-Sim (follow [this page](../downloading-eocv-sim.md#running-eocv-sim) if needed)
 2. In the top bar menu, go to **Workspace -> External -> Create Gradle Workspace**
 
-![](<../.gitbook/assets/create gradle workspace.png>)
+![](../.gitbook/assets/create-gradle-workspace.png)
 
 1. In the file explorer, create a new empty folder or select one that already exists but has no files. You can't use a folder that already has files in it. Click on the folder icon with a "+" in the top, and give the new folder a name.
 
-![](<../.gitbook/assets/create folder screenshot.png>)
+![](../.gitbook/assets/create-folder-screenshot.png)
 
 1. Select the newly created folder and click on "open".&#x20;
 
