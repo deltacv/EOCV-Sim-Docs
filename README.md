@@ -4,6 +4,14 @@ description: Introduction to EOCV-Sim
 
 # Welcome!
 
+### Buy me a coffee
+
+For the past 4 years I've been developing and maintaining learning tools for robotics kids to have a better understanding of programming and computer vision. Now that I've graduated from the robotics competition and I'm headed to college it is my goal to keep maintaining and improving these tools for future generations to keep learning, completely cost-free and open source. Your donation in [buy me a coffee](https://buymeacoffee.com/serivesmejia]) will help me maintain those goals through the following years as life gets busier.
+
+\- Sebastian Erives, deltacv's main dev
+
+### Introduction
+
 Thank you for your interest in EOCV-Sim! (EasyOpenCV Simulator)
 
 We made this tool in hopes that it will be useful for all FTC teams seeking a way of learning and developing their seasonal OpenCV algorithms in an easy and straightforward way, while also providing some extra tools to improve the experience of developing such algorithms.
