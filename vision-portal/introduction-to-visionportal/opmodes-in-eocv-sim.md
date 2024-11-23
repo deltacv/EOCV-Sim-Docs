@@ -1,6 +1,6 @@
 # OpModes in EOCV-Sim
 
-To enable usage of the VisionPortal API within EOCV-Sim, newer versions of the simulator enable the usage of so-called "`OpMode`s"; [FIRST Tech Challenge teams should be already familiar with this concept](https://ftc-docs.firstinspires.org/en/latest/programming\_resources/tutorial\_specific/android\_studio/creating\_op\_modes/Creating-and-Running-an-Op-Mode-\(Android-Studio\).html#examining-the-structure-of-your-op-mode), where they work as "executable units" that allow users to write and run their custom robot code in a logical and simple manner, splitting robot operation into different "programs" that can be selected and switched to perfom different tasks depending on what is needed through the different stages of a robot match.
+To enable usage of the VisionPortal API within EOCV-Sim, newer versions of the simulator enable the usage of so-called "`OpMode`s"; [FIRST Tech Challenge teams should be already familiar with this concept](https://ftc-docs.firstinspires.org/en/latest/programming_resources/tutorial_specific/android_studio/creating_op_modes/Creating-and-Running-an-Op-Mode-\(Android-Studio\).html#examining-the-structure-of-your-op-mode), where they work as "executable units" that allow users to write and run their custom robot code in a logical and simple manner, splitting robot operation into different "programs" that can be selected and switched to perfom different tasks depending on what is needed through the different stages of a robot match.
 
 Due to the way VisionPortal works specifically, it is ideal to call this API within said `OpMode`s, where setup code tells the API which cameras to use, the resolution of the camera stream, whether we want a live preview or not, running multiple VisionProcessors at once, or even perform development and testing of AprilTag localization math within these executable units.
 
@@ -12,7 +12,7 @@ Due to the way VisionPortal works specifically, it is ideal to call this API wit
 * The `loop()` method which is executed repeatedly after `init()` has passed you press start
 * The OpMode should be able to stop anytime when requested, pressing the stop button that is available right after starting.
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>The OpMode selection and control panel as depicted in EOCV-Sim</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (11).png" alt=""><figcaption><p>The OpMode selection and control panel as depicted in EOCV-Sim</p></figcaption></figure>
 
 ### OpMode Structure
 
@@ -74,14 +74,14 @@ public class ExampleOpMode extends OpMode {
 
 You might have noticed this particular declaration in the example code earlier, which are known as "annotations" within Java. In this specific case, this annotation helps the program find your custom-created `OpMode`s. The key difference between @Autonomous and @TeleOp simply consists of where your program will be classified within the user interface of the station controls;
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Both annotations take a `name`parameter which aid in displaying a more user-friendly name for your `OpMode`s when selecting them;
 
 <pre class="language-java"><code class="lang-java"><strong>@TeleOp(name = "Concept: AprilTag")
 </strong></code></pre>
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### LinearOpMode
 

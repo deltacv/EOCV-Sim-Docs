@@ -4,13 +4,13 @@
 
 From EOCV-Sim v2.0.0 and going forward, there's a variable tuner implemented into the simulator, inspired by FTC Dashboard, it allows to edit public, non-final variables from your pipeline in real time seamlessly through Java reflection.
 
-<figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption><p>Variable tuner panel popup button (located at the bottom)</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (8) (1).png" alt=""><figcaption><p>Variable tuner panel popup button (located at the bottom)</p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (10).png" alt=""><figcaption><p>DefaultPipeline blur variable</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (10) (1).png" alt=""><figcaption><p>DefaultPipeline blur variable</p></figcaption></figure>
 
 The "blur" variable simply consists of a public, non-final field declared in the DefaultPipeline, which is automatically detected and displayed by the simulator:
 
-<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption><p>DefaultPipeline source code</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (9) (1).png" alt=""><figcaption><p>DefaultPipeline source code</p></figcaption></figure>
 
 ## Supported Types
 
@@ -142,13 +142,13 @@ public class SimpleThresholdPipeline extends OpenCvPipeline {
 
 And so, when initially selecting this pipeline in the simulator, its initial state should look something like this:
 
-![Scalar variables with sliders that range from 0 to 255](../.gitbook/assets/eocvsim\_usage\_tuner\_thresholdsample\_1.png)
+![Scalar variables with sliders that range from 0 to 255](../.gitbook/assets/eocvsim_usage_tuner_thresholdsample_1.png)
 
 All pixels from the input Mat are entirely visible; this is because we specified a range of 0 lower and 255 upper (0-255) for all three channels (see the sliders values). Since those values are the minimum (0%) and maximum (100%) for YCrCb respectively, all pixels are able to go through our "threshold". The last slider can be ignored since we don't have a 4th color channel
 
 After a bit of playing around with the sliders, it's possible to come up with some decent values which successfully filter out the orange ring stack out of everything else:
 
-![Woo! We are filtering the rings!](../.gitbook/assets/eocvsim\_usage\_tuner\_thresholdsample\_2.png)
+![Woo! We are filtering the rings!](../.gitbook/assets/eocvsim_usage_tuner_thresholdsample_2.png)
 
 A problem with the YCrCb color space, especially this year, is that the difference between red and orange is very subtle. So we need to play with the values for a good while until we find some that filters out the red from the goals (in the image you can see there's still red leftovers at the top right) but displays the ring stack. Or do some other technique alongside thresholding such as [FTCLib's contour ring pipeline](https://github.com/FTCLib/FTCLib/blob/3a43b191b18581a2f741588f9b8ab60c13b7fb6c/core/vision/src/main/java/com/arcrobotics/ftclib/vision/UGContourRingPipeline.kt#L46) with the "horizon" mechanism.
 

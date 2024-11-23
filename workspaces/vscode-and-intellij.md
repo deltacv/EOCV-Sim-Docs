@@ -20,7 +20,7 @@ This guide will explain how to use any of these two, you can choose whichever su
 3. Once you have done the steps in that section, go back to VS Code. If it wasn't opened automatically by EOCV-Sim, open it manually and select the folder you created in EOCV-Sim.
 4. If the language support plugin asks to import the project on the bottom right, click on yes.
 
-![](../.gitbook/assets/screenshot\_vscode\_javaproject.png)
+![](../.gitbook/assets/screenshot_vscode_javaproject.png)
 
 1. Wait for the import process to finish; see the tiny loading icon in the bottom right.
 2. Pop up the `src/main/java` folder. This is where you will put your pipelines.
@@ -51,7 +51,38 @@ Refer to the [pipelines section](../introduction/pipelines/) if you want to lear
 
 ## IntelliJ IDEA
 
-(Work in progress)
+1. Do the steps specified in the[ Creating a Gradle workspace](vscode-and-intellij.md#creating-a-gradle-workspace) section
+2. Open IntelliJ IDEA and import the Gradle workspace you just created:
+
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption><p>Select the "Open" option and navigate to find your workspace folder</p></figcaption></figure>
+
+Alternatively, if you're not at the starter screen of IntelliJ IDEA, you can also do the following:
+
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption><p>Import the Gradle workspace with the "Project from Existing Sources" menu option</p></figcaption></figure>
+
+3. Navigate through the src/main/java folders, you'll then find the packages in which you'll be able to start adding your own pipelines
+
+<figure><img src="../.gitbook/assets/image (5).png" alt="" width="413"><figcaption><p>Gradle workspace imported into IntelliJ</p></figcaption></figure>
+
+4. Create a new Java class anywhere within the src/main/java folder. To create a pipeline, you can start with this template
+
+```java
+import org.opencv.core.Mat;
+import org.opencv.imgproc.Imgproc;
+import org.openftc.easyopencv.OpenCvPipeline;
+
+public class <Name Here> extends OpenCvPipeline {
+
+    @Override
+    public Mat processFrame(Mat inputMat) {
+        // Your code here
+        return inputMat;
+    }
+
+}
+```
+
+If you have EOCV-Sim opened, every time you make a change in IntellIj a new build will be executed. If your pipeline was compiled successfully, it will be added to the list with a "gears" icon in the list to differentiate it.
 
 ## Creating a Gradle workspace
 
@@ -66,6 +97,8 @@ Refer to the [pipelines section](../introduction/pipelines/) if you want to lear
 
 1. Select the newly created folder and click on "open".&#x20;
 
-It will pop up a dialog asking if you want to open VS Code. If you were following the VS Code guide, click on "Yes" once it asks if you want to open it, and go back to [step #5](vscode-and-intellij.md#vs-code).
+It will pop up a dialog asking if you want to open VS Code.
 
-If you were following the IntelliJ IDEA guide, click on "No" and go back to \*.
+* If you were following the VS Code guide, click on "Yes" once it asks if you want to open it, and go back to [step #5](vscode-and-intellij.md#vs-code).
+* If you were following the IntelliJ IDEA guide, click on "No" and go back to step #2.
+

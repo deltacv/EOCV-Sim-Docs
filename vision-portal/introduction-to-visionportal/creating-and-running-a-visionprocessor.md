@@ -48,9 +48,9 @@ Workspaces are the recommended method for development if you use Java. You can u
 
 Once you have added a processor using any of the methods mentioned before, executing it is very simple. Your processor should appear in the "Pipelines" list once it's part of a workspace or added to EOCV-Sim's source code:
 
-<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption><p>We will select the GrayProcessor we made earlier</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1).png" alt=""><figcaption><p>We will select the GrayProcessor we made earlier</p></figcaption></figure>
 
 You can simply select the processor in this list, and it will begin execution right away.
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption><p>GrayProcessor running live in EOCV-Sim</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption><p>GrayProcessor running live in EOCV-Sim</p></figcaption></figure>
 
