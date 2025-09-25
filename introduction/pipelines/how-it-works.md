@@ -44,7 +44,7 @@ You can learn more about pipelines in [their respective section](./).
 There are two ways for adding your own pipelines:
 
 * [Workspaces](../../workspaces/what-are-workspaces.md), which are the fastest and most flexible method of using the sim, since the pipelines are built on-the-fly and changes are applied immediately.
-* [Building from source](../../other/untitled.md), which allows the use of other JVM languages such as Kotlin, but it is slower since you have to rebuild and wait for the sim to open every time you make changes in your pipelines.
+* [Building from source](../../other/building-from-source.md), which allows the use of other JVM languages such as Kotlin, but it is slower since you have to rebuild and wait for the sim to open every time you make changes in your pipelines.
 
 Workspaces are the recommended method for development if you use Java. You can use any IDE or text editor for them. We officially support [Android Studio](../../workspaces/android-studio.md) (partially), [VS Code, and IntelliJ IDEA](../../workspaces/vscode-and-intellij.md).
 
@@ -58,4 +58,4 @@ You can simply select the pipeline by clicking it with your mouse, and[ the life
 
 Notice the gears icon the SamplePipeline has, this means that the pipeline was added using the [workspaces ](../../workspaces/what-are-workspaces.md)method.&#x20;
 
-As opposed to the DefaultPipeline which has a hammer and a wrench icon, which means that it was added using the [Build from Source](../../other/untitled.md) method.
+As opposed to the DefaultPipeline which has a hammer and a wrench icon, which means that it was added using the [Build from Source](../../other/building-from-source.md) method.

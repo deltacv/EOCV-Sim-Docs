@@ -31,4 +31,4 @@
 
 ## Other
 
-* [Building from Source](other/untitled.md)
+* [Building from Source](other/building-from-source.md)

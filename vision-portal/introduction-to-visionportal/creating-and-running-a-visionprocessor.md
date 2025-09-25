@@ -40,7 +40,7 @@ Note that we return _null_ from `processFrame`, which means that the `userContex
 There are two ways for adding your own processors:
 
 * [Workspaces](../../workspaces/what-are-workspaces.md), which are the fastest and most flexible method of using the sim, since the code is built on-the-fly and changes are applied immediately.
-* [Building from source](../../other/untitled.md), which allows the use of other JVM languages such as Kotlin, but it is slower since you have to recompile and wait for the sim to open every time you make changes in your code.
+* [Building from source](../../other/building-from-source.md), which allows the use of other JVM languages such as Kotlin, but it is slower since you have to recompile and wait for the sim to open every time you make changes in your code.
 
 Workspaces are the recommended method for development if you use Java. You can use any IDE or text editor for them.
 
